@@ -58,11 +58,11 @@ fun multiples(){
 //c. details() - Prints out the account number and balance and name in
 //this format: “Account number x with balance y is operated by z” (6pts)
 class CurrentAcccount(var accountNumber: Int,var accountName:String,balance:Int){
-    fun deposit(){
-        var
+    fun deposit(amount:Double){
+        println("The new balane is ${balance+amount}")
     }
     fun withdraw(){
-
+        println("The new balance is ${balance-amount}")
     }
     fun details(){
         println("Account number ${accountNumber} with balance ${balance} is operated by ${accountName}")
@@ -78,6 +78,9 @@ class CurrentAcccount(var accountNumber: Int,var accountName:String,balance:Int)
 //from the account. It also increments the withdrawals attribute after a
 //successful withdrawal (6pts)
 
-class SavingAccount(accountNumber:Int,accountName:String,balance: Int):CurrentAcccount{
+class SavingAccount(accountNumber:Int,accountName:String,balance: Int,withdrawals: Int):CurrentAcccount{
+    fun withdrawals(withdrawals:Int){
+
+    }
 
 }
